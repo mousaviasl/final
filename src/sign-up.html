@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP - Escrow Service</title>
+    <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EscrowService</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sign-in.html">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sign-up.html">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./report.html">Report a Problem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./people.html">Our People</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="display-4 text-center mb-4">Sign Up</h1>
+        <form id="myForm">
+            <h2 class="mb-3">Personal and Business Information</h2>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" id="password">
+            </div>
+            <div class="form-group">
+                <label for="businessName">Name of the Business (Optional)</label>
+                <input type="text" class="form-control" id="businessName">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <select id="state" class="form-control">
+                        <option value="Choose">Choose the State</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" id="country">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <h2 class="mb-3">Credit Card Information</h2>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="cardName">Name on Card</label>
+                <input type="text" class="form-control" id="cardName" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="expDate">Expiration Date</label>
+                    <input type="text" class="form-control" id="expDate" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Terms and Conditions</label>
+                <textarea class="form-control" rows="4"
+                    readonly>
+
+                    **Credit Card Access and Charging Rights**
+                    
+                    1. **Authorization for Credit Card Access**: As a fundamental aspect of our services, you, as the user, agree to provide us with access to your credit card information. This access is vital for facilitating payments related to the services we offer.
+                    
+                    2. **Right to Charge**: We reserve the exclusive right to charge your credit card for any services rendered in accordance with the agreements made at the time of service provision. This includes, but is not limited to, subscription fees, one-time charges, and additional services requested by you.
+                    
+                    3. **Responsibility for Sufficient Funds**: It is your sole responsibility to ensure that there are adequate funds available in your account to cover these charges. This includes being aware of your credit card's limit and current balance.
+                    
+                    4. **Acknowledgment of Liability for Unauthorized Use**: By signing up for our services, you acknowledge and agree that we are not liable for any unauthorized charges made to your credit card by third parties. This includes, but is not limited to, fraudulent activities and theft.
+                    
+                    5. **Obligation to Review Transactions**: We strongly advise you to regularly review all transactions and statements related to your credit card to monitor for any unauthorized or suspicious activity. This is an essential practice to safeguard your financial security.
+                    
+                    6. **Dispute Resolution**: In case of any disputes regarding the charges made to your credit card, please contact our customer service immediately. We will investigate the matter and strive to resolve any issues in a timely and fair manner.
+                    
+                    7. **Updates to Payment Information**: You are responsible for ensuring that your credit card information is up to date. This includes informing us of any changes to your credit card number, expiration date, or billing address.
+                    
+                    8. **Cancellation and Refund Policy**: Please refer to our Cancellation and Refund Policy for details regarding the process of cancelling our services and requesting refunds for charges made to your credit card.
+                    
+                    </textarea>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create your account</button>
+        </form>
+    </div>
+
+    <footer class="footer bg-dark text-white mt-4 py-3">
+        <div class="container text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./sign-in.html">Sign In</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./sign-up.html">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./report.html">Report a Problem</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="./people.html">Our People</a></li>
+            </ul>
+            <p class="mt-3">© 2023 EscrowService. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>document.getElementById('myForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+    
+        const formData = {
+            First: document.getElementById('firstName').value,
+            Last: document.getElementById('lastName').value,
+            state: document.getElementById('state').value,
+            city: document.getElementById('city').value,
+            country: document.getElementById('country').value,
+            phoneNumber: document.getElementById('phoneNumber').value,
+            email: document.getElementById('email').value,
+            cardNumber: document.getElementById('cardNumber').value,
+            cardName: document.getElementById('cardName').value,
+            expDate: document.getElementById('expDate').value,
+            cvv: document.getElementById('cvv').value,
+            password: document.getElementById('password').value,
+        };
+    
+        localStorage.setItem('formData', JSON.stringify(formData));
+    
+        window.location.href = './portal.html';
+    });
+    </script>
+
+    <script src="./javascripts/main.js"></script>
+
+</body>
+
+</html>

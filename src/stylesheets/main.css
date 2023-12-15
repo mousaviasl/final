@@ -1,3 +1,27 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    border-radius: 
+}
+
+body {
+    background-image: url('./images/2.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fade-on-scroll {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
