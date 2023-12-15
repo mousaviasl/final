@@ -63,25 +63,6 @@
                 </div>
             </div>
         </div>
-    
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const storedData = JSON.parse(localStorage.getItem('formData'));
-            
-                if (storedData) {
-                    document.getElementById('firstName').textContent += storedData.first;
-                    document.getElementById('lastName').textContent += storedData.last;
-                    document.getElementById('userEmail').textContent += storedData.email;
-                    document.getElementById('userPhone').textContent += storedData.phoneNumber;
-                }
-            });
-        </script>
-
-
 
     <footer class="footer bg-dark text-white mt-4">
         <div class="container text-center">
@@ -97,21 +78,34 @@
         </div>
     </footer>
 
-    <script>document.addEventListener('DOMContentLoaded', function() {
-        const storedData = JSON.parse(localStorage.getItem('formData'));
-    
-        if (storedData) {
-            console.log(storedData.first);
-            console.log(storedData.last);
-            console.log(storedData.email);
-            console.log(storedData.phoneNumber);
-            console.log(storedData.cardName);
-            console.log(storedData.cardNumber);
-            console.log(storedData.expDate);
-            console.log(storedData.password);
-            console.log(storedData.cvv);
-        }
-    });
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const storedData = JSON.parse(localStorage.getItem('formData'));
+
+            if (storedData) {
+                document.getElementById('firstName').textContent += storedData.first;
+                document.getElementById('lastName').textContent += storedData.last;
+                document.getElementById('userEmail').textContent += storedData.email;
+                document.getElementById('userPhone').textContent += storedData.phoneNumber;
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const storedData = JSON.parse(localStorage.getItem('formData'));
+
+            if (storedData) {
+                console.log(storedData.first);
+                console.log(storedData.last);
+                console.log(storedData.email);
+                console.log(storedData.phoneNumber);
+                console.log(storedData.cardName);
+                console.log(storedData.cardNumber);
+                console.log(storedData.expDate);
+                console.log(storedData.password);
+                console.log(storedData.cvv);
+            }
+        });
     </script>
 
     <script src="./javascripts/main.js"></script>
