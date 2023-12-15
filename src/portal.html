@@ -84,8 +84,8 @@
             const storedData = JSON.parse(localStorage.getItem('formData'));
 
             if (storedData) {
-                document.getElementById('firstName').textContent += storedData.first;
-                document.getElementById('lastName').textContent += storedData.last;
+                document.getElementById('firstName').textContent += storedData.firstName;
+                document.getElementById('lastName').textContent += storedData.lastName;
                 document.getElementById('userEmail').textContent += storedData.email;
                 document.getElementById('userPhone').textContent += storedData.phoneNumber;
             }
