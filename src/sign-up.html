@@ -157,8 +157,7 @@
             </div>
             <div class="form-group">
                 <label>Terms and Conditions</label>
-                <textarea class="form-control" rows="4"
-                    readonly>
+                <textarea class="form-control" rows="4" readonly>
 
                     **Credit Card Access and Charging Rights**
                     
@@ -203,29 +202,31 @@
         </div>
     </footer>
 
-    
-    <script>document.getElementById('myForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-    
-        const formData = {
-            firstName: document.getElementById('firstName').value,
-            lastName: document.getElementById('lastName').value,
-            state: document.getElementById('state').value,
-            city: document.getElementById('city').value,
-            country: document.getElementById('country').value,
-            phoneNumber: document.getElementById('phoneNumber').value,
-            email: document.getElementById('email').value,
-            cardNumber: document.getElementById('cardNumber').value,
-            cardName: document.getElementById('cardName').value,
-            expDate: document.getElementById('expDate').value,
-            cvv: document.getElementById('cvv').value,
-            password: document.getElementById('password').value,
-        };
-    
-        localStorage.setItem('formData', JSON.stringify(formData));
-    
-        window.location.href = './portal.html';
-    });
+
+    <script>
+
+        document.getElementById('myForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                state: document.getElementById('state').value,
+                city: document.getElementById('city').value,
+                country: document.getElementById('country').value,
+                phoneNumber: document.getElementById('phoneNumber').value,
+                email: document.getElementById('email').value,
+                cardNumber: document.getElementById('cardNumber').value,
+                cardName: document.getElementById('cardName').value,
+                expDate: document.getElementById('expDate').value,
+                cvv: document.getElementById('cvv').value,
+                password: document.getElementById('password').value,
+            };
+
+            localStorage.setItem('formData', JSON.stringify(formData));
+
+            window.location.href = './portal.html';
+        });
     </script>
 
     <script src="./javascripts/main.js"></script>
